@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_flipping_game"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".FlippingGame"
+    android:background="@drawable/bg_color7">
+
+    <include
+        layout="@layout/images"
+        android:layout_width="wrap_content"
+        android:layout_height="551dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tv_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:text="P1: 0"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/tv_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_p1"
+        android:layout_alignStart="@+id/tv_p1"
+        android:layout_marginStart="94dp"
+        android:layout_marginBottom="-57dp"
+        android:text="P2: 0"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/peekbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="319dp"
+        android:layout_marginTop="2dp"
+        android:onClick="peekButtonListener"
+        android:text="Peek" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="93dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="302dp"
+        android:layout_height="135dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="Welcome to your Game Centre."
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/slidingTilesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="262dp"
+        android:text="Sliding Tiles"
+        android:onClick="launchSlidingTiles"/>
+
+    <Button
+        android:id="@+id/concentrationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="259dp"
+        android:text="Concentration"
+        android:onClick="launchConcentration"/>
+
+    <Button
+        android:id="@+id/squirtleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="167dp"
+        android:onClick="launchSquirtle"
+        android:text="Squirtle" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="357dp"
+        android:layout_height="69dp"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-37dp"
+        android:gravity="center"
+        android:text="Here you can choose a variety of games you want to play."
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="109dp"
+        android:layout_height="29dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="-34dp"
+        android:text="Logged in as:"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/userView"
+        android:layout_width="136dp"
+        android:layout_height="33dp"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="1dp"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/recordsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/squirtleBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-37dp"
+        android:layout_marginBottom="86dp"
+        android:onClick="launchRecords"
+        android:text="PERSONAL RECORDS" />
+</RelativeLayout>

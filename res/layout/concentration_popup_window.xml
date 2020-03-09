@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:background="@drawable/pop_bg"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/modeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="43dp"
+        android:text="Choose a mode"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/single_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="SINGLE PLAYER"
+        android:onClick="singlePlayerListener"
+        android:background="@drawable/button_style"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/two_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/single_player"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="32dp"
+        android:text="TWO PLAYERS"
+        android:onClick="twoPlayersListener"
+        android:background="@drawable/button_style"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>
